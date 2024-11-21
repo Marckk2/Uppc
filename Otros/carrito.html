@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="logo">
+            <img src="/Imagenes/Web.png" alt="Logo de Up PC Zone">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="icons">
+            <span class="icono user">👤</span>
+            <span class="icono carrito">🛒</span>
+        </div>
+    </div>
+
+    <!-- Menú principal -->
+    <nav class="main-menu">
+        <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="carrito-items"></div> <!-- Este debe existir -->
+        <p id="carrito-mensaje" style="display: none;"></p>
+      </div>
+      <div class="carrito"></div>
+      <div class="carrito-mensaje"></div>
+      
+  <footer>
+    <p>© 2024 Tu tienda</p>
+  </footer>
+  <script src="/script.js"></script>
+  <!-- Agregar un botón para comprar -->
+<!-- Agregar un botón para comprar que redirige a la página de finalizar compra -->
+<div class="boton-comprar">
+    <a href="finalizar-compra.html"><button id="comprar-btn">Comprar</button></a>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo">
+            <img src="/Imagenes/Web.png" alt="Logo de Up PC Zone">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="icons">
+            <span class="icono user">👤</span>
+            <span class="icono carrito">🛒</span>
+        </div>
+    </div>
+
+
+    <nav class="main-menu">
+        <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <div id="finalizar-compra">
+        <h2>Resumen de tu compra</h2>
+        <div id="productos-compra"></div>
+
+        <h3>Datos de Envío</h3>
+        <form id="formulario-compra">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <button type="submit">Confirmar Compra</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Tu tienda</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

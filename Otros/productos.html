@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up PC Zone</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="top-bar">
+            <div class="logo">
+                <img src="/Imagenes/Web.png" alt="Logo Up PC Zone">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos, marcas o categorías">
+            </div>
+            <div class="icons">
+                <div class="icono user">👤</div>
+                <div class="carrito">🛒</div>
+            </div>
+            <div class="left-bar">
+
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul class="menu">
+                <li><a href="/index.html">Inicio</a>
+                    <a href="/Otros/carrito.html">Carrito</a>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="productos.html">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="perifericos.html">Periféricos</a>
+                        <a href="hard.html">Hardware</a>
+                        <a href="ofertas.html">Ofertas</a>
+                    </div>
+                </li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="productos">
+        <div class="producto">
+            <img src="/imagenes/teclado1.jpg" alt="Teclado Mecánico" class="producto-imagen">
+            <h3>Teclado Mecánico RGB</h3>
+            <p class="producto-precio">$6,500</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Teclado Mecánico RGB', 6500)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/mouse1.jpg" alt="Mouse Gaming" class="producto-imagen">
+            <h3>Mouse Gaming Óptico</h3>
+            <p class="producto-precio">$4,200</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Mouse Gaming Óptico', 4200)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/auriculares1.jpg" alt="Auriculares Inalámbricos" class="producto-imagen">
+            <h3>Auriculares Inalámbricos</h3>
+            <p class="producto-precio">$8,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Auriculares Inalámbricos',8000)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/monitor1.jpg" alt="Monitor Curvo 24”" class="producto-imagen">
+            <h3>Monitor Curvo 24”</h3>
+            <p class="producto-precio">$20,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Monitor Curvo 24”', 20000)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/procesador1.jpg" alt="Procesador Intel i5" class="producto-imagen">
+            <h3>Procesador Intel i5 10ª Gen</h3>
+            <p class="producto-precio">$15,500</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Procesador Intel i5 10ª Gen', 15500)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/grafica1.jpg" alt="Placa Gráfica GTX 1660" class="producto-imagen">
+            <h3>Placa Gráfica GTX 1660</h3>
+            <p class="producto-precio">$40,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Placa Gráfica GTX 1660', 40000)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/teclado2.jpg" alt="Teclado Mecánico Gaming" class="producto-imagen">
+            <h3>Teclado Mecánico Gaming</h3>
+            <p class="producto-precio">$7,500</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Teclado Mecánico Gaming', 7500)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/mouse2.jpg" alt="Mouse Ergonómico" class="producto-imagen">
+            <h3>Mouse Ergonómico</h3>
+            <p class="producto-precio">$3,500</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Mouse Ergonómico', 3500)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/auriculares2.jpg" alt="Auriculares Gaming" class="producto-imagen">
+            <h3>Auriculares Gaming con Micrófono</h3>
+            <p class="producto-precio">$6,800</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Auriculares Gaming con Micrófono', 6800)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/monitor2.jpg" alt="Monitor 27” 4K" class="producto-imagen">
+            <h3>Monitor 27” 4K UHD</h3>
+            <p class="producto-precio">$45,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Monitor 27” 4K UHD', 45000)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/procesador2.jpg" alt="Procesador AMD Ryzen 7" class="producto-imagen">
+            <h3>Procesador AMD Ryzen 7 3700X</h3>
+            <p class="producto-precio">$22,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Procesador AMD Ryzen 7 3700X', 22000)">Comprar</button>
+        </div>
+    
+        <div class="producto">
+            <img src="/imagenes/grafica2.jpg" alt="Placa Gráfica RTX 3060" class="producto-imagen">
+            <h3>Placa Gráfica RTX 3060</h3>
+            <p class="producto-precio">$55,000</p>
+            <button class="boton-comprar" onclick="agregarAlCarrito('Placa Gráfica RTX 3060', 55000)">Comprar</button>
+        </div>
+    </section>
+    
+        
+    <div class="main-content">
+        <h2>Bienvenido a Up PC Zone</h2>
+        <p>Tu tienda de confianza para productos de PC, hardware y periféricos.</p>
+    </div>
+
+    <footer>
+        <p>© 2024 Up PC Zone. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+
+.top-bar {
+    background-color: #821b1b; 
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px; 
+}
+
+.logo img {
+    width: 300px; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 15%;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-style: groove;
+}
+
+.search-bar {
+    flex-grow: 1; 
+    max-width: 500px; 
+}
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-left: auto; 
+}
+
+.icono user, .carrito {
+    font-size: 20px;
+}
+
+/* Menú principal */
+.main-menu {
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.drop {
+    color: #ffffff;
+    text-align: left;
+}
+
+/*ayuda*/
+.contactos {
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.contactos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contactos ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contactos a {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+
+.contactos a:hover {
+    text-decoration: underline;
+}
+
+.formulario {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+}
+
+.formulario button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #821b1b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #000000;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+.producto img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    margin: auto;
+}
+.productos-original {
+    text-decoration: line-through;
+    color: #888;
+}
+.precio-ofertas {
+    color: red;
+    font-weight: bold;
+}
+
+/*Boton comprar*/
+.btn-comprar {
+    padding: 10px 20px;
+    background-color: #821b1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-comprar:hover {
+    background-color: #a02929;
+}
+
+/*carrito*/
+/* Contenedor del carrito */
+#carrito {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Encabezado del carrito */
+#carrito h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Lista de productos */
+.producto-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.producto-carrito:last-child {
+    border-bottom: none;
+}
+
+.producto-carrito p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Botón de eliminar */
+.btn-eliminar {
+    padding: 5px 10px;
+    background-color: #821b1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background-color: #a02929;
+}
+
+/* Total del carrito */
+#total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Botón de finalizar compra */
+.btn-finalizar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1d732b;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-finalizar:hover {
+    background-color: #2a9f3a;
+}
+
+/* Estilo para el contenedor del carrito */
+.carrito {
+    position: fixed; /* Fija el carrito en un lugar de la página */
+    top: 100px; /* Ajusta la posición desde la parte superior */
+    right: 20px; /* Ajusta la posición desde la derecha */
+    background-color: #333; /* Fondo oscuro para el carrito */
+    color: #fff; /* Texto blanco */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    width: 300px; /* Ancho fijo del carrito */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+  }
+  
+  .carrito-item {
+    border-bottom: 1px solid #555; /* Línea separadora */
+    padding: 10px 0; /* Espaciado interno entre productos */
+  }
+  
+  .carrito-item:last-child {
+    border-bottom: none; /* Sin línea para el último producto */
+  }
+  
+  .carrito .btn-eliminar {
+    background-color: #821b1b; /* Fondo del botón */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .carrito .btn-eliminar:hover {
+    background-color: #a30000; /* Cambia de color al pasar el mouse */
+  }
+  
+  /* Mensaje temporal */
+  .carrito-mensaje {
+    position: fixed;
+    top: 50px; /* Justo debajo del header */
+    right: 20px;
+    background-color: #4CAF50; /* Verde para éxito */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+  }
+
+  /* Estilo para la página de finalizar compra */
+#finalizar-compra {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#finalizar-compra h2 {
+    text-align: center;
+}
+
+#finalizar-compra form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#finalizar-compra input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+#finalizar-compra button {
+    padding: 10px;
+    background-color: #821b1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#finalizar-compra button:hover {
+    background-color: #a83232;
+}
+
+/* Estilo para el botón de "Comprar" */
+.boton-comprar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#comprar-btn {
+    padding: 12px 30px;
+    background-color: #821b1b;  /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comprar-btn:hover {
+    background-color: #a83232;  /* Color cuando el botón se pasa por encima */
+}
+
+#comprar-btn:active {
+    background-color: #6e1515;  /* Color cuando el botón se presiona */
+}
+
+/* Contenedor de todos los productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); /* Aumentamos el ancho mínimo */
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Estilo de cada producto */
+.producto {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px; /* Bordes más redondeados */
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px; /* Fijamos una altura para que todos los productos tengan la misma */
+    width: auto;
+}
+
+/* Efecto al pasar el mouse sobre un producto */
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.producto-imagen {
+    width: 100px;
+    height: 200px; /* Establecemos una altura fija para las imágenes */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título del producto */
+.producto h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.producto-precio {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Estilo del botón de compra */
+.boton-comprar {
+    padding: 12px 25px;
+    background-color: #821b1b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Hace que el botón se alinee en la parte inferior */
+    display: block;
+    width: 100%;
+}
+
+/* Cambio de color cuando el botón es presionado */
+.boton-comprar:hover {
+    background-color: #a83232;
+}
+
+/* Espacio entre los productos y botones */
+.producto .boton-comprar {
+    margin-top: 15px;
+}
+
+/* Estilos para la sección de ofertas */
+#ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Coloca las ofertas en columnas adaptables */
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2c2c2c; /* Fondo oscuro para la sección */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 100px; /* Espacio adicional hacia abajo */
+}
+
+/* Estilo de cada oferta dentro de la sección */
+#ofertas .oferta {
+    background-color: #333; /* Fondo oscuro para los productos */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Aumentamos la altura para dar más espacio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Efecto hover en las ofertas */
+#ofertas .oferta:hover {
+    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en hover */
+}
+
+/* Estilo de las imágenes de los productos */
+#ofertas .oferta img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Títulos de los productos */
+#ofertas .oferta h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Precios de los productos */
+#ofertas .oferta p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Estilo del precio original tachado */
+#ofertas .oferta .precio-original {
+    text-decoration: line-through;
+    color: #bbb; /* Precio original gris */
+}
+
+/* Estilo del precio de la oferta */
+#ofertas .oferta .precio-oferta {
+    color: #f39c12; /* Precio en dorado */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Estilo del botón de comprar */
+#ofertas .oferta .btn-comprar {
+    background-color: #27ae60; /* Botón verde brillante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Agregamos más espacio entre el precio y el botón */
+}
+
+#ofertas .oferta .btn-comprar:hover {
+    background-color: #2ecc71; /* Verde más claro al pasar el mouse */
+}
+
+/* Título de la sección de ofertas */
+#ofertas h2 {
+    text-align: center;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
